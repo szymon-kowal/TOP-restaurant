@@ -1,173 +1,220 @@
 @font-face {
-    font-family: "Univers 67 Condensed Bold";
-    src: url("https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.eot");
-    src: url("https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.svg#Univers 67 Condensed Bold")format("svg");
+	font-family: 'Univers 67 Condensed Bold';
+	src: url('https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.eot');
+	src: url('https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.eot?#iefix')
+			format('embedded-opentype'),
+		url('https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.woff2')
+			format('woff2'),
+		url('https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.woff')
+			format('woff'),
+		url('https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.ttf')
+			format('truetype'),
+		url('https://db.onlinewebfonts.com/t/10bae0c1ca71c8bca604cf63b7731533.svg#Univers 67 Condensed Bold')
+			format('svg');
 }
 
 :root {
-    --background-color-opacity: rgba(0, 0, 0, 0.8);
-    --background-opacity-light: rgba(0, 0, 0, 0.7);
+	--background-color-opacity: rgba(0, 0, 0, 0.8);
+	--background-opacity-light: rgba(0, 0, 0, 0.7);
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
 }
 
 body {
-    background-image: url(./assets/photo/eso_cook.jpg); 
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+	background-image: url(./assets/photo/eso_cook.jpg);
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
 }
 
 * {
-    font-family: "Univers 67 Condensed Bold", sans-serif;
+	font-family: 'Univers 67 Condensed Bold', sans-serif;
 }
 
 .header {
-    background-color: var(--background-color-opacity);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+	background-color: var(--background-color-opacity);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .title {
-    font-size: 3rem;
-    margin: 50px 10px 0 10px;
+	font-size: 3rem;
+	margin: 50px 10px 0 10px;
 }
 
 .buttons {
-    padding: 20px 20px 0 20px;
+	padding: 20px 20px 0 20px;
+	display: flex;
 }
 
 button {
-    margin: 10px 30px 20px 30px;
-    padding: 10px 15px;
-    background-color: var(--background-color-opacity);
-    color: white;
-    border: none;
+	margin: 10px 30px 20px 30px;
+	padding: 10px 15px;
+	background-color: var(--background-color-opacity);
+	color: white;
+	border: none;
 }
 
 .selected {
-    border-bottom: 1px solid white;
+	border-bottom: 1px solid white;
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .container {
-    background-color: var(--background-opacity-light);
-    width: 550px;
-    min-height: 550px;
-    color: white;
-    text-align: center;
-    padding: 20px;
+	background-color: var(--background-opacity-light);
+	width: 550px;
+	min-height: 550px;
+	color: white;
+	text-align: center;
+	padding: 20px;
 }
 
 p {
-    margin: 0;
+	margin: 0;
 }
 
 .footer {
-    color: white;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-color-opacity);
+	color: white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background-color-opacity);
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 2rem;
 }
 
 .flex2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
-    padding: 20px;
-    gap: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 2rem;
+	padding: 20px;
+	gap: 20px;
 }
 
 .grid {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    padding: 20px;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	gap: 25px;
+	padding: 20px;
 }
 
 .element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    background-color: rgba(0, 0, 0, 0.65);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	gap: 10px;
+	background-color: rgba(0, 0, 0, 0.65);
 }
 
 .element:hover {
-    background-color: rgba(99, 99, 99, 0.4);
+	background-color: rgba(99, 99, 99, 0.4);
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .map {
-    width: 500px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url(./assets/photo/map.jpg);
+	width: 500px;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(./assets/photo/map.jpg);
 }
 
 .torte {
-    background-image: url(./assets/photo/Molten_War_Torte.jpg);
+	background-image: url(./assets/photo/Molten_War_Torte.jpg);
 }
 
 .stew {
-    background-image: url(./assets/photo/mushroom_stew.jpg);
-    
+	background-image: url(./assets/photo/mushroom_stew.jpg);
 }
 .fish {
-    background-image: url(./assets/photo/Artaeum.jpg);
+	background-image: url(./assets/photo/Artaeum.jpg);
 }
 
 .ambrosia {
-    background-image: url(./assets/photo/Ambrosia.jpg);
+	background-image: url(./assets/photo/Ambrosia.jpg);
 }
 
 .ale {
-    background-image: url(./assets/photo/Spiked_Ale.jpg);
+	background-image: url(./assets/photo/Spiked_Ale.jpg);
 }
 
 .jester {
-    background-image: url(./assets/photo/jester_chocolatecoin.jpg);
+	background-image: url(./assets/photo/jester_chocolatecoin.jpg);
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 80%;
+		padding: 0;
+	}
+
+	.title {
+		font-size: 2rem;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.grid {
+		display: flex;
+		flex-direction: column;
+	}
+
+	button {
+		margin: 5px 15px 10px 15px;
+		padding: 5px 7.5px;
+		background-color: var(--background-color-opacity);
+		color: white;
+		border: none;
+	}
+
+	.map {
+		width: 300px;
+		height: 300px;
+	}
+
+	.flex2 {
+		min-width: 310px;
+		min-height: 700px;
+	}
 }
